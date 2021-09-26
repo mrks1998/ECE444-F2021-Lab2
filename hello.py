@@ -1,16 +1,16 @@
 from flask import Flask, render_template
 
-#app = Flask(__name__)
-#@app.route('/')
-#def index():
-# return '<h1>Hello World!</h1>'
-#@app.route('/user/<name>')
-#def user(name):
-# return '<h1>Hello, %s!</h1>' % name
-#if __name__ == '__main__':
-# app.run(debug=True)
+app = Flask(__name__)
+@app.route('/')
+def index():
+ return '<h1>Hello World!</h1>'
+@app.route('/user/<name>')
+def user(name):
+ return '<h1>Hello, %s!</h1>' % name
+if __name__ == '__main__':
+ app.run(debug=True)
 
- @app.route('C:\Users\mreza\OneDrive\Documents\GitHub\ECE444-F2021-Lab2\templates')
+ @app.route('/')
 def index():
  return render_template('index.html')
 @app.route('/user/<name>')
