@@ -10,7 +10,7 @@ from flask import Flask, render_template
 #if __name__ == '__main__':
 # app.run(debug=True)
 
- @app.route('/')
+ @app.route('C:\Users\mreza\OneDrive\Documents\GitHub\ECE444-F2021-Lab2\templates')
 def index():
  return render_template('index.html')
 @app.route('/user/<name>')
